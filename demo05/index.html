@@ -9,11 +9,11 @@
     <div id="example"></div>
     <script type="text/babel">
       var NotesList = React.createClass({
-        render: function() {
+        render() {
           return (
             <ol>
               {
-                React.Children.map(this.props.children, function (child) {
+                React.Children.map(this.props.children, (child)=> {
                   return <li>{child}</li>;
                 })
               }
